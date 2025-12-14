@@ -1,0 +1,65 @@
+/* Global styles */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Overlay Navigation */
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1e3799;
+    overflow-y: hidden;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+.overlay-content {
+    position: relative;
+    top: 20%;
+    text-align: center;
+}
+
+.overlay a {
+    display: block;
+    font-size: 32px;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 60px;
+    cursor: pointer;
+}
+
+/* Reusable UI helpers */
+.section-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    border-bottom: 4px solid #f9ca24;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #1e3799;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.service-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
