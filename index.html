@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>The Artisan Workshop - Bespoke Indian Craftsmanship</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Tailwind Config + Custom JS -->
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-bg-light text-gray-800">
+
+    <!-- FULL SCREEN OVERLAY NAVIGATION -->
+    <div id="myNav" class="overlay">
+        <span class="closebtn" onclick="closeNav()">&times;</span>
+
+        <div class="overlay-content">
+            <a href="#about" onclick="closeNav()">About</a>
+            <a href="#services" onclick="closeNav()">Services</a>
+            <a href="#gallery" onclick="closeNav()">Clients</a>
+            <a href="#contact" onclick="closeNav()">Contact</a>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="sticky top-0 bg-white shadow-lg z-40">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center max-w-4xl">
+
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="text-primary">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                </svg>
+                <h1 class="text-xl font-bold text-accent">
+                    The Artisan Workshop
+                </h1>
+            </div>
+
+            <!-- Hamburger -->
+            <button onclick="openNav()" aria-label="Open Menu">
+                <i data-lucide="menu" class="w-8 h-8 text-accent"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container mx-auto px-4 py-8 max-w-4xl pb-32 sm:pb-8">
+
+        <!-- HERO -->
+        <section class="mb-12 text-center pt-8">
+            <div class="p-6 bg-primary rounded-xl shadow-xl text-white">
+                <h2 class="text-3xl sm:text-4xl font-extrabold mb-2">
+                    Crafting India's Finest Spaces
+                </h2>
+                <p class="text-lg opacity-90">
+                    Bespoke furniture and interior decor, handcrafted in Bengaluru.
+                </p>
+                <a href="#contact"
+                    class="inline-block mt-6 px-8 py-3 bg-secondary text-gray-900 font-bold rounded-full">
+                    Get a Free Consultation
+                </a>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="mb-16 pt-8">
+            <h2 class="section-title">Our Story & Vision</h2>
+            <div class="card">
+                <p>
+                    The Artisan Workshop was born from a family tradition of woodworking
+                    excellence. Every piece tells a story of quality and care.
+                </p>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="mb-16 pt-8">
+            <h2 class="section-title">Key Offerings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                <div class="service-card">
+                    <i data-lucide="chair"></i>
+                    <h3>Bespoke Furniture</h3>
+                    <p>Custom handcrafted furniture.</p>
+                </div>
+
+                <div class="service-card">
+                    <i data-lucide="layout-grid"></i>
+                    <h3>Interior Design</h3>
+                    <p>Complete interior solutions.</p>
+                </div>
+
+                <div class="service-card">
+                    <i data-lucide="layers"></i>
+                    <h3>Restoration</h3>
+                    <p>Antique furniture restoration.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="pt-8">
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="card">
+                <p>
+                    📞 <a href="tel:8987877" class="text-primary">+91 89878 77</a><br />
+                    📧 info@artisanworkshop.in
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-accent text-white p-6 text-center text-sm">
+        © 2025 The Artisan Workshop. Handcrafted in India.
+    </footer>
+
+</body>
+</html>
